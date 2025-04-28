@@ -131,7 +131,7 @@ export default function SignupForm() {
                 By clicking Create account, you agree to Followus.link's <Link href="#" className="underline">privacy notice</Link>, <Link href="#" className="underline">T&Cs</Link> and to receive offers, news and updates.
               </p>
 
-              <button className="w-full py-2 border border-gray-500 rounded-md flex items-center justify-center gap-2 hover:bg-gray-700">
+              {/* <button className="w-full py-2 border border-gray-500 rounded-md flex items-center justify-center gap-2 hover:bg-gray-700">
                 <GoogleIcon />
                 Sign up with Google
               </button>
@@ -139,7 +139,7 @@ export default function SignupForm() {
               <button className="w-full py-2 border border-gray-500 rounded-md flex items-center justify-center gap-2 hover:bg-gray-700">
                 <AppleIcon />
                 Sign up with Apple
-              </button>
+              </button> */}
 
               <p className="text-sm text-center">
                 Already have an account? <Link href="/login" className="text-blue-400 underline">Login</Link>
