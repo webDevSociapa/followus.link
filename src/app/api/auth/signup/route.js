@@ -170,6 +170,7 @@ export async function PUT(req) {
     return NextResponse.json({ message: `An error occurred: ${error.message}` }, { status: 500 });
   }
 }
+
 export async function GET(req) {
   try {
     const { searchParams } = new URL(req.url);
