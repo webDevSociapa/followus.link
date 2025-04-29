@@ -173,6 +173,10 @@ export async function PUT(req) {
 
 export async function GET(req) {
   try {
+    if (!req?.url?.startsWith("http")) {
+      return NextResponse.json({ message: "Invalid request URL" }, { status: 400 });
+    }
+
     const { searchParams } = new URL(req.url);
     const username = searchParams.get("username");
 
