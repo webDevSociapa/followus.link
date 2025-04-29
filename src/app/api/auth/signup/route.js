@@ -9,7 +9,7 @@ const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
 const dbName = "sociaTreeAuth";
 const collectionName = "sociaTreeAuth01";
-const JWT_SECRET = "123321"; // Secure secret key
+const JWT_SECRET = process.env.JWT_SECRET; // Secure secret key
 
 async function connectToDb() {
   await client.connect();
