@@ -12,6 +12,7 @@ async function connectToDb() {
     return database.collection(collectionName);
 }
 
+
 // POST API - Insert profile data & ensure only one selected template
 export async function POST(req) {
     try {
