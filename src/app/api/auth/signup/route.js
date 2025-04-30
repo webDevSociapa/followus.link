@@ -14,7 +14,7 @@ const JWT_SECRET = process.env.JWT_SECRET; // Secure secret key
 async function connectToDb() {
   await client.connect();
   const database = client.db(dbName);
-  return database.collection(collectionName);
+  return database?.collection(collectionName);
 }
 
 const s3 = new AWS.S3({
@@ -190,7 +190,5 @@ export async function GET(req) {
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json({ message: error.message }, { status: 500 });
-  } finally {
-    await client.close();
   }
 }

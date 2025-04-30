@@ -88,8 +88,6 @@ export default function PreviewPage() {
       ]
     : [];
 
-    
-
   useEffect(() => {
     const fetchLinks = async () => {
       if (username) {
